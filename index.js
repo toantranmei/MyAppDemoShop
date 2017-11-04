@@ -1,4 +1,13 @@
+import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import App from './App';
+import App from './src/components/App';
 
-AppRegistry.registerComponent('MyShop', () => App);
+class MyShop extends Component {
+    render() {
+        return(
+            <App />
+        );
+    }
+}
+
+AppRegistry.registerComponent('MyShop', () => MyShop);
